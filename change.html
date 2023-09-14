@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITE 233</title>
+    <link rel="stylesheet" href="cha.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class = "me">                   
+                <a href ="change.html">Home</a> <a href ="event.html">Event</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="row">
+        <br><br><br><br>
+        <div class="column">
+          <img src="aaa.jpeg" alt="a" style="width:100%"><br>
+          <center><button id="changeImage">Change Picture</button></center>
+        </div>
+        <div class="column">
+          <img src="a.jpeg" alt="b" style="width:100%"><br>
+        <center><button id="changeImage">Change Picture</button></center>
+        </div>
+        <div class="column">
+          <img src="note.jpeg" alt="c" style="width:100%"><br>
+        <center><button id="changeImage">Change Picture</button></center>
+        </div>
+      </div>
+      
+      <center>
+    <video width="320" height="240" autoplay>
+        <source src="green.mp4" type="video/mp4">
+        <center><button id="changeImage">Change Picture</button></center>
+      </video>
+      <video width="320" height="240" autoplay loop>
+        <source src="diy.mp4" type="video/mp4">
+        <center><button id="changeImage">Change Picture</button></center>
+      </video>
+      <video width="320" height="240" controls>
+        <source src="mirror.mp4" type="video/mp4">
+        <center><button id="changeImage">Change Picture</button></center>
+      </video><br><br>
+    </center>
+
+    <script>
+        // JavaScript to change images and videos
+        const imageSources = ["aaa.jpeg", "a.jpeg", "note.jpeg"];
+        const videoSources = ["green.mp4", "diy.mp4", "mirror.mp4"];
+        let currentIndex = 0;
+
+        function changeMedia(mediaNumber) {
+            currentIndex = (currentIndex + 1) % imageSources.length;
+            document.getElementById(image${mediaNumber}).src = imageSources[currentIndex];
+            document.getElementById(video${mediaNumber}).src = videoSources[currentIndex];
+        }
+    </script>
+</body>
+</html>
